@@ -16,7 +16,7 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI demoApi(@Value("REST API for challenge chapter 6 back end java binar academy") String appDescription,
                            @Value("v1.0.0") String appVersion
-    ){
+    ) {
         final String securitySchemeName = "bearerAuth";
         Server server = new Server();
         server.setUrl("https://microservicefilmchallenge7-production.up.railway.app/");

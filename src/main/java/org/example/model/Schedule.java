@@ -4,6 +4,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Data
@@ -20,9 +21,9 @@ public class Schedule {
     private Long filmCode;
     @Schema(example = "11 Juli")
     private String date;
-    @Schema(example = "13.00")
-    private String startTime;
     @Schema(example = "15.00")
+    private String startTime;
+    @Schema(example = "17.00")
     private String endTime;
     @Schema(example = "40000")
     private Long ticketPrice;

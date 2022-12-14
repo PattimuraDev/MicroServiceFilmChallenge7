@@ -23,6 +23,7 @@ public class ScheduleController {
 
     /**
      * Method controller untuk mengakomodasi kebutuhan menambahkan schedule baru
+     *
      * @param scheduleDto parameter data transfer object untuk schedule
      * @return response entity hasil dari response endpoint API
      */
@@ -36,11 +37,11 @@ public class ScheduleController {
             )
     )
     @PostMapping("/create_schedule")
-    public ResponseEntity<Schedule> createSchedule(@RequestBody ScheduleDto scheduleDto){
+    public ResponseEntity<Schedule> createSchedule(@RequestBody ScheduleDto scheduleDto) {
         final Schedule result = filmServices.addSchedule(filmServices.scheduleDtoMapToEntity(scheduleDto));
-        if(result != null){
+        if (result != null) {
             return new ResponseEntity<>(result, HttpStatus.CREATED);
-        }else{
+        } else {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -48,6 +49,7 @@ public class ScheduleController {
 
     /**
      * Method controller untuk mengakomodasi kebutuhan menghapus schedule
+     *
      * @param idSchedule parameter untuk id dari schedule yang ingin dihapus
      * @return response entity hasil dari response endpoint API
      */
@@ -61,8 +63,8 @@ public class ScheduleController {
             )
     )
     @DeleteMapping("/delete_schedule/{id}")
-    public ResponseEntity<CustomResponseJson> deleteSchedule(@PathVariable("id") Long idSchedule){
-        try{
+    public ResponseEntity<CustomResponseJson> deleteSchedule(@PathVariable("id") Long idSchedule) {
+        try {
             filmServices.deleteSchedule(idSchedule);
             return new ResponseEntity<>(
                     new CustomResponseJson(
@@ -71,7 +73,7 @@ public class ScheduleController {
                     ),
                     HttpStatus.OK
             );
-        }catch (Exception e){
+        } catch (Exception e) {
             return new ResponseEntity<>(
                     new CustomResponseJson(
                             "Operasi menghapus schedule gagal",

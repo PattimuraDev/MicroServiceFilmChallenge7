@@ -15,8 +15,8 @@ public class ScheduleDto {
     private String startTime;
     @Schema(example = "17.00")
     private String endTime;
-    @Schema(example = "25000")
+    @Schema(example = "40000")
     private Long ticketPrice;
-    @Schema(example = "Studio A")
+    @Schema(example = "Studio C")
     private String studioName;
 }
