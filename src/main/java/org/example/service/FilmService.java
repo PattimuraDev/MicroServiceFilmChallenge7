@@ -4,7 +4,6 @@ import org.example.model.Film;
 import org.example.model.FilmDto;
 import org.example.model.Schedule;
 import org.example.model.ScheduleDto;
-
 import java.util.List;
 
 public interface FilmService {
