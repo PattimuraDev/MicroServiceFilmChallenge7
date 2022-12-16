@@ -3,6 +3,10 @@ package org.example.model;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
+/**
+ * Kelas pemodelan DTO (data transfer object) dari objek schedule
+ * @author Dwi Satria Patra
+ */
 @Data
 public class ScheduleDto {
     @Schema(example = "1")

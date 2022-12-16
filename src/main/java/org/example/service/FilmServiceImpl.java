@@ -14,6 +14,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * Kelas implementasi film service yang menghandle semua permintaan
+ * ke repository film
+ * @author Dwi Satria Patra
+ */
 @Service
 @Transactional
 public class FilmServiceImpl implements FilmService {

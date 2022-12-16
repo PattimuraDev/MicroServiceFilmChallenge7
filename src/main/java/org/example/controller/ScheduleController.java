@@ -14,6 +14,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * Kelas controller untuk menghandle endpoint terkait schedule
+ * @author Dwi Satria Patra
+ */
 @Tag(name = "SCHEDULES")
 @RestController
 @RequestMapping("/schedules")

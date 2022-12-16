@@ -16,6 +16,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
+/**
+ * Kelas controller untuk menghandle endpoint terkait film
+ * @author Dwi Satria Patra
+ */
 @Tag(name = "FILMS")
 @RestController
 @RequestMapping("/films")

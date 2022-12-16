@@ -6,6 +6,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
+/**
+ * Kelas untuk memodelkan table/entity schedule/jadwal
+ * @author Dwi Satria Patra
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

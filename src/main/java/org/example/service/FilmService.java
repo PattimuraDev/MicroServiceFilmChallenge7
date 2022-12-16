@@ -6,6 +6,11 @@ import org.example.model.Schedule;
 import org.example.model.ScheduleDto;
 import java.util.List;
 
+/**
+ * Interface service untuk menghandle semua permintaan
+ * ke repository user
+ * @author Dwi Satria Patra
+ */
 public interface FilmService {
     Film addFilms(Film films);
 

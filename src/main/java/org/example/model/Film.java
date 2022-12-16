@@ -7,6 +7,10 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.List;
 
+/**
+ * Kelas untuk memodelkan table/entity film
+ * @author Dwi Satria Patra
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
